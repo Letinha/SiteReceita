@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabeçalho{
+    align-items: center;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.menu__lista{
+    display: flex;
+}
+.menu__item{
+    list-style: none;
+}
+.menu__item: last-child .menu_link{
+    margin-right: 0;
+}
+.menu__link{
+    color: #808080;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+.menu__link.ativo{
+    color: #333333;
+    font-weight: bold;
+}
+.menu__link:hover{
+    text-decoration: underline;
+}
+.banner__img{
+    width: 100%;
+
+}
+.banner__titulo{
+    color: #fdfdfd;
+    font-family: pacifico, cursive;
+    font-size: 5.0625rem;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgb(0, 0, 6, 0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.sobre{
+    padding: 2.5rem;
+    text-align: center;
+}
+.sobre__titulo{
+    color: #8d0606;
+    font-family: pacifico, cursive;
+    font-size: 3.75rem;
+}
+.sobre__descricao{
+    color: #595959;
+    font-size: 1.75rem;
+    font-weight: 100%;
+}
+.receitas{
+  background: #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 0 0 5rem;
+
+}
+.receita{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    width: calc(25% - 5rem);
+}
+.receita__imagem{
+    height: 200px;
+}
+.receita__titulo{
+    font-size: 1.4375;
+}
+.receita__descrição{
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+.receita__conteudo{
+    padding: 1rem;
+
+}
+.receita__botao{
+    background: #8d0606;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;
+    padding: 1rex;
+    transition: all .1s ease-in-out;
+    
+}
+.receita__botao:hover{
+    cursor: pointer;
+    background: #620404;
+}
+
+.quem-somos{
+    text-align: center;
+    padding: 5rem;
+}
+.quem-somos__titulo{
+    margin-bottom: 1rem;
+    color: #8d0606;
+    font-size: 3.1875rem;
+    font-family:  pacifico, cursive;
+
+}
+.quem-somos__descricao{
+    font-weight: 100;
+    font-size: 1.75rem;
+    color: #595959;
+}
+.pessoas{
+    display: flex;
+    padding: 3rem;
+    justify-content: space-around;
+}
+.pessoa{
+    display: flex;
+    flex-direction: column;
+}
+.pessoa__nome{
+    margin: 1rem 0;
+    font-family: pacifico, cursive;
+    color: #8d0606;
+    font-size: 2rem;
+}
+.pessoa__funcao{
+    text-transform: lowercase;
+    color: #595959;
+    font-size: 1.25rem;
+
+}
+.pessoa__imagem{
+    background: red;
+    background-size: cover;
+    width: 300px;
+    border-radius: 100%;
+    height: 300px;
+    background-position: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+.pessoa__imagem--Roberta{
+    background-image: url('Assets/img/pessoas/roberta.jpg');
+}
+.pessoa__imagem--Marcela{
+    background-image: url('Assets/img/pessoas/marcela.jpg');
+}
+.pessoa__imagem--Andreia{
+    background-image: url('Assets/img/pessoas/andreia.jpg');
+}
+.rodape{
+    background: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right;
+    padding: 1.5625rem 5rem;
+    text-transform: lowercase;
+}
+@media screen and (min-width: 0) {
+    .cabeçalho{
+        justify-content: center;
+        padding: 0 1rem;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .cabeçalho{
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+    
+}
+@media screen and (min-width: 0) {
+    .logo{
+        display: none;
+    }
+    
+}
+@media screen and(min-width: 768px) {
+    .logo{
+        display: block;
+    }
+    
+}
+@media screen and (min-width: 0) {
+    .banner__titulo{
+        font-size: 3rem;
+    }
+    
+}
+@media screen and (min-width: 768px){
+    .banner__titulo{
+        font-size: 5.0625rem;
+    }
+}
